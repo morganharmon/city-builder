@@ -6,11 +6,15 @@ const climateSelect = document.getElementById('climateSelect');
 const archiSelect = document.getElementById('archiSelect');
 const castleSelect = document.getElementById('castleSelect');
 const countSec = document.getElementById('countSec');
+const submitButton = document.getElementById('submitButton');
+const sloganInput = document.getElementById('sloganInput');
+const sloganDisplay = document.getElementById('sloganDisplay');
 
 // let state
 let climateCount = 0;
 let archiCount = 0;
 let castleCount = 0;
+let sloganList = [];
 
 // set event listeners 
   // get user input
@@ -38,4 +42,19 @@ castleSelect.addEventListener('change', (e) => {
 
 function displayCount() {
     countSec.textContent = `You have changed the climate ${climateCount} times. You have changed the architecture style ${archiCount} times. You have changed the castle ${castleCount} times.`;
+}
+
+submitButton.addEventListener('click', () => {
+    sloganList.push(sloganInput.value);
+    sloganInput.value = '';
+    displayList();
+});
+
+function displayList() {
+    sloganDisplay.textContent = '';
+    for (let val of sloganList) {
+        const list = document.createElement('p');
+        list.textContent = val;
+        sloganDisplay.append(list);
+    }
 }
