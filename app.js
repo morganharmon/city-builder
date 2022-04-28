@@ -5,8 +5,12 @@ const castlePic = document.getElementById('castlePic');
 const climateSelect = document.getElementById('climateSelect');
 const archiSelect = document.getElementById('archiSelect');
 const castleSelect = document.getElementById('castleSelect');
+const countSec = document.getElementById('countSec');
 
 // let state
+let climateCount = 0;
+let archiCount = 0;
+let castleCount = 0;
 
 // set event listeners 
   // get user input
@@ -16,12 +20,22 @@ const castleSelect = document.getElementById('castleSelect');
 climateSelect.addEventListener('change', (e) => {
     const climate = e.target.value;
     climatePic.src = `./assets/${climate}.jpeg`;
+    climateCount++;
+    displayCount();
 });
 archiSelect.addEventListener('change', (e) => {
     const archi = e.target.value;
     archiPic.src = `./assets/${archi}.jpeg`;
+    archiCount++;
+    displayCount();
 });
 castleSelect.addEventListener('change', (e) => {
     const castle = e.target.value;
     castlePic.src = `./assets/${castle}.jpeg`;
+    castleCount++;
+    displayCount();
 });
+
+function displayCount() {
+    countSec.textContent = `You have changed the climate ${climateCount} times. You have changed the architecture style ${archiCount} times. You have changed the castle ${castleCount} times.`;
+}
