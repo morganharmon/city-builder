@@ -14,10 +14,33 @@
 
 <body>
     <header>
+        <h1>City Builder</h1>
     </header>
     <main>
         <section class="main-section">
-            
+            <select id="climateSelect">Select a Climate
+                <option id="temperateOpt">Temperate</option>
+                <option id="desertOpt">Desert</option>
+                <option id="polarOpt">Polar</option>
+                <option id="tropicalOpt">Tropical</option>
+            </select>
+            <select id="archiSelect">Select an Architecture
+                <option id="modernArchi">Modern</option>
+                <option id="gothicArchi">Gothic</option>
+                <option id="artDecoArchi">Art Deco</option>
+                <option id="beauxArchi">Beaux-Arts</option>
+            </select>
+            <div id="climatePic" backgroundImage="./assets/temperate.png"></div>
+            <div id="archiPic" backgroundImage="./assets/modern.png"></div>
+            <section id="sloganSec">
+                <h2>City Slogans</h2>
+                <input id="sloganInput">
+                <button id="submitButton">Add a City Slogan</button>
+            </section>
+            <section id="countSec">
+                You have changed the climate 0 times. You have changed the architecture style 0 times.
+            </section>
+
 
         </section>
     </main>
