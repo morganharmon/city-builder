@@ -18,20 +18,26 @@
     </header>
     <main>
         <section class="main-section">
-            <select id="climateSelect">Select a Climate
+            <section id="climateSec">
+                <h3>Select a Climate</h3>
+            <select id="climateSelect">
                 <option id="temperateOpt">Temperate</option>
                 <option id="desertOpt">Desert</option>
                 <option id="polarOpt">Polar</option>
                 <option id="tropicalOpt">Tropical</option>
             </select>
-            <select id="archiSelect">Select an Architecture
+            <div id="climatePic" backgroundImage="./assets/temperate.png"></div>
+            </section>
+            <section id="archiSec">
+                <h3>Select an Architecture Type</h3>
+            <select id="archiSelect">
                 <option id="modernArchi">Modern</option>
                 <option id="gothicArchi">Gothic</option>
                 <option id="artDecoArchi">Art Deco</option>
                 <option id="beauxArchi">Beaux-Arts</option>
             </select>
-            <div id="climatePic" backgroundImage="./assets/temperate.png"></div>
             <div id="archiPic" backgroundImage="./assets/modern.png"></div>
+            </section>
             <section id="sloganSec">
                 <h2>City Slogans</h2>
                 <input id="sloganInput">
@@ -45,7 +51,7 @@
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2022 Alchemy Code Lab</div>
     </footer>
 
     <script type="module" src="./app.js"></script>
