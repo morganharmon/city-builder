@@ -46,16 +46,16 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: var(--gutter);
-    padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
-    margin-bottom: var(--gutter);
+    padding-top: var(20px);
+    padding-bottom: var(20px);
+    margin-top: var(20px);
+    margin-bottom: var(20px);
     border: solid 2px var(--color1);
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     background-color: var(--color3);
     height: var(--header-height);
     /* box-shadow: var(--shadow); */
