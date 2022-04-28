@@ -67,6 +67,7 @@ h2 {
     font-weight: bold;
 }
 
+
 .gutter-right {
     margin-right: 20px;
 }
@@ -75,9 +76,21 @@ header img {
     height: var(--header-height);
 }
 
-p {
-    margin: var(--gutter);
+#sloganDisplay {
+    margin-bottom: 40px;
 }
+
+#countSec {
+    margin: 10px;
+}
+
+#submitButton {
+    margin-bottom: 10px;
+}
+
+/* p {
+    margin: var(--gutter);
+} */
   
 footer {
     position: fixed;
