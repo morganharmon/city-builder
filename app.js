@@ -10,6 +10,7 @@ const submitButton = document.getElementById('submitButton');
 const sloganInput = document.getElementById('sloganInput');
 const sloganDisplay = document.getElementById('sloganDisplay');
 const cityNameInput = document.getElementById('cityNameInput');
+const cityNameSec = document.getElementById('cityNameSec');
 
 // let state
 let climateCount = 0;
@@ -51,6 +52,7 @@ submitButton.addEventListener('click', () => {
     sloganList.push(sloganInput.value);
     sloganInput.value = '';
     cityNameList.push(cityNameInput.value);
+    cityNameSec.textContent = cityNameInput.value;
     cityNameInput.value = '';
     concatLists();
     displayList();

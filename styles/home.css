@@ -1,1 +1,7 @@
 /* add home page styles here */
+#cityNameSec {
+    font-size: 80px;
+    font-style: oblique;
+    font-weight: bold;
+    color: purple;
+}
