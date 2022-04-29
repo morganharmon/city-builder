@@ -9,12 +9,15 @@ const countSec = document.getElementById('countSec');
 const submitButton = document.getElementById('submitButton');
 const sloganInput = document.getElementById('sloganInput');
 const sloganDisplay = document.getElementById('sloganDisplay');
+const cityNameInput = document.getElementById('cityNameInput');
 
 // let state
 let climateCount = 0;
 let archiCount = 0;
 let castleCount = 0;
 let sloganList = [];
+let cityNameList = [];
+let concatList = [];
 
 // set event listeners 
   // get user input
@@ -47,13 +50,28 @@ function displayCount() {
 submitButton.addEventListener('click', () => {
     sloganList.push(sloganInput.value);
     sloganInput.value = '';
+    cityNameList.push(cityNameInput.value);
+    cityNameInput.value = '';
+    concatLists();
     displayList();
+    concatList = [];
 });
+
+function concatLists() {
+    for (let slogan of sloganList) {
+        for (let name of cityNameList) {
+            if (cityNameList.indexOf(name) === sloganList.indexOf(slogan)) {
+                concatList.push(name + ': ' + slogan);
+            }
+        }
+    }
+
+}
 
 function displayList() {
     sloganDisplay.textContent = '';
-    for (let val of sloganList) {
-        const list = document.createElement('p');
+    for (let val of concatList) {
+        const list = document.createElement('li');
         list.textContent = val;
         sloganDisplay.append(list);
     }
