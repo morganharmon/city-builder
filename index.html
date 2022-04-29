@@ -14,57 +14,58 @@
 
 <body>
     <header>
-        <div class="gutter-right logo">
-            <img src="./assets/big-logo.png" />
-        </div>
+        <h1>City Builder</h1>
     </header>
     <main>
         <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
-
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-
+            <div id="cityNameSec">
+            </div>
+            <section id="climateSec">
+                <h3>Select a Climate</h3>
+            <select id="climateSelect">
+                <option id="temperateOpt">Temperate</option>
+                <option id="desertOpt">Desert</option>
+                <option id="polarOpt">Polar</option>
+                <option id="tropicalOpt">Tropical</option>
+            </select>
+            <img id="climatePic" src="./assets/temperate.jpeg" height="256px">
+            </section>
+            <section id="archiSec">
+                <h3>Select an Architecture Type</h3>
+            <select id="archiSelect">
+                <option id="modern">Modern</option>
+                <option id="gothic">Gothic</option>
+                <option id="artdeco">Art Deco</option>
+                <option id="beauxArts">Beaux-Arts</option>
+            </select>
+            <img id="archiPic" src="./assets/modern.jpeg" height="256px">
+            </section>
+            <section id="castleSec">
+                <h3>Select a Castle</h3>
+            <select id="castleSelect">
+                <option id="castle1">Castle 1</option>
+                <option id="castle2">Castle 2</option>
+                <option id="castle3">Castle 3</option>
+                <option id="castle4">Castle 4</option>
+            </select>
+            <img id="castlePic" src="./assets/castle 1.jpeg" height="256px">
+            </section>
+            <section id="sloganSec">
+                <h2>City Slogans</h2>
+                <div>City name:</div>
+                <input id="cityNameInput">
+                <div>City slogan:</div>
+                <input id="sloganInput">
+                <button id="submitButton">Add a City Slogan</button>
+            </section>
+            <div id="countSec">
+                You have changed the climate 0 times. You have changed the architecture style 0 times. You have changed the castle 0 times.
+            </div>
+            <ol id="sloganDisplay"></ol>
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
+        <div class="copy gutter-right">&copy; 2022 Alchemy Code Lab</div>
     </footer>
 
     <script type="module" src="./app.js"></script>
